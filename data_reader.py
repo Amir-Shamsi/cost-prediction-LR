@@ -12,3 +12,8 @@ class InsuranceCostData:
         self._data.head()
         return self._data
 
+    def print_info(self):
+        print(self._data.info)
+
+    def print_shape(self):
+        print(self._data.shape)
