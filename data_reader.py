@@ -8,6 +8,7 @@ class InsuranceCostData:
         self._file_name = file_name
 
     def read_data(self):
+        self._data = pd.read_csv(self._file_name)
         self._data.head()
         return self._data
 
