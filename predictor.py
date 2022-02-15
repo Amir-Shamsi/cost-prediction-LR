@@ -14,7 +14,8 @@ class InsuranceCostPredictor:
     _linear_regression = None
 
     def __init__(self, dataset_filename: str = ''):
-        self._file_name = dataset_filename
+        if dataset_filename != '':
+            self._file_name = dataset_filename
 
     def predict(self):
         data_set = InsuranceCostData(file_name=self._file_name)
