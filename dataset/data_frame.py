@@ -2,7 +2,7 @@ import pandas as pd
 from pandas import DataFrame, Index
 
 
-def make_data_frame(columns: Index) -> DataFrame:
+def dummies_data_frame(columns: Index, av_columns: DataFrame) -> DataFrame:
     """
     :param columns: columns to make data frame
     :return: made data frame
