@@ -3,6 +3,7 @@ import pandas as pd
 from dataset.data_reader import InsuranceCostData
 from sklearn.metrics import mean_squared_error
 from cat_convertor import convert_to_category
+from dataset.data_frame import dummies_data_frame
 from sklearn.model_selection import train_test_split
 from sklearn.linear_model import LinearRegression
 
@@ -48,6 +49,7 @@ class InsuranceCostPredictor:
 
         self._columns = dum_data.columns
 
+    def predict(self, file_name: str):
     def get_mean_squared_error(self):
         y_predict = self._linear_regression.predict(self._x_test)
         return math.sqrt(mean_squared_error(self._y_test, y_predict))
