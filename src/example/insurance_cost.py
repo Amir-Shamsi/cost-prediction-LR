@@ -6,6 +6,8 @@ pred_cost = icp.predict(file_name='../../src/example/new_data.csv')
 
 pred_data = icp.get_predict_data()
 
+icp.analyze(hue='smoker', based_on=['age', 'bmi', 'smoker', 'charges'])
+
 print('+--------------------------------------------------+')
 print('|\t\t\t\tMade by Amir Shamsi\t\t\t\t   |')
 """ 

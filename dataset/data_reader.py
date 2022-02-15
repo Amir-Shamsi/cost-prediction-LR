@@ -34,8 +34,8 @@ class InsuranceCostData:
         """
         print(self._data.shape)
 
-    def analyse(self, hue, *based_on):
-        sb.set_style("blackgrid")
+    def analyse(self, hue, based_on):
+        sb.set_style('ticks')
         sb.pairplot(self._data[based_on],
                     hue=hue,
                     height=3,

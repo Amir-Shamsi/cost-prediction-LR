@@ -119,7 +119,7 @@ class InsuranceCostPredictor:
         """
         return self._predict_data
 
-    def analyze(self, hue, *based_on):
+    def analyze(self, hue, based_on):
         """
         :param hue:
         :param based_on:
