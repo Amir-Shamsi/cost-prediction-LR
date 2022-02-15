@@ -11,6 +11,7 @@ class InsuranceCostPredictor:
     _file_name = 'dataset/insurance.csv'
     _y_test = 0
     _x_test = 0
+    _columns = None
     _linear_regression = None
 
     def __init__(self, dataset_filename: str = ''):
@@ -45,6 +46,7 @@ class InsuranceCostPredictor:
         self._x_test = x_test
         self._y_test = y_test
 
+        self._columns = dum_data.columns
 
     def get_mean_squared_error(self):
         y_predict = self._linear_regression.predict(self._x_test)
