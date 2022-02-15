@@ -17,6 +17,15 @@ class InsuranceCostPredictor:
     _predict_data = None
 
     def __init__(self, dataset_filename: str = ''):
+        """
+        Initial medical insurance cost predicting class
+        for initial the parameter `dataset_filename`'s
+        link can be given to it otherwise use default
+        file name 'dataset/insurance.csv'
+
+        :param dataset_filename: file name of data set to extract and algo train
+        by that
+        """
         if dataset_filename != '':
             self._file_name = dataset_filename
         self.__predict_init__()
