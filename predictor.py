@@ -101,6 +101,10 @@ class InsuranceCostPredictor:
         return self._linear_regression.predict(data_frame)
 
     def get_mean_squared_error(self):
+        """
+        to calculate the mean squared error
+        :return: mean squared error as float
+        """
         y_predict = self._linear_regression.predict(self._x_test)
         return math.sqrt(mean_squared_error(self._y_test, y_predict))
 
