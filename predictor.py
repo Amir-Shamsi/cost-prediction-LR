@@ -42,6 +42,19 @@ class InsuranceCostPredictor:
             convert_to_category(data_set, name)
 
     def __predict_init__(self):
+        """
+        predict initial to make everything ready for the function
+        `predict()`
+
+        it will store some variable inside class vars such as:
+            * _y_test
+            * _x_test
+            * _columns
+            * _linear_regression
+            * _predict_data
+            
+        :return: None
+        """
         data_set = InsuranceCostData(file_name=self._file_name)
         data_set = data_set.read_data()
 
