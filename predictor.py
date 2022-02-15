@@ -14,6 +14,7 @@ class InsuranceCostPredictor:
     _x_test = 0
     _columns = None
     _linear_regression = None
+    _predict_data = None
 
     def __init__(self, dataset_filename: str = ''):
         if dataset_filename != '':
@@ -55,6 +56,8 @@ class InsuranceCostPredictor:
 
         self._convert_type(new_data, 'sex', 'smoker', 'region')
 
+        self._predict_data = new_data
+
         new_dum_data = pd.get_dummies(new_data)
 
         data_frame = dummies_data_frame(self._columns, new_dum_data)
@@ -64,4 +67,7 @@ class InsuranceCostPredictor:
     def get_mean_squared_error(self):
         y_predict = self._linear_regression.predict(self._x_test)
         return math.sqrt(mean_squared_error(self._y_test, y_predict))
+
+    def get_predict_data(self):
+        return self._predict_data
 
