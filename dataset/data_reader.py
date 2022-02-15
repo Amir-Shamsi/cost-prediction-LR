@@ -1,4 +1,6 @@
 import pandas as pd
+import seaborn as sb
+import matplotlib.pyplot as plt
 
 class InsuranceCostData:
     _file_name = ''
@@ -31,3 +33,11 @@ class InsuranceCostData:
         :return:
         """
         print(self._data.shape)
+
+    def analyse(self, hue, *based_on):
+        sb.set_style("blackgrid")
+        sb.pairplot(self._data[based_on],
+                    hue=hue,
+                    height=3,
+                    palette="Set1")
+        plt.show()
