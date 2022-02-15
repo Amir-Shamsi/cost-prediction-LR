@@ -18,14 +18,15 @@ class InsuranceCostPredictor:
             self._file_name = dataset_filename
         self.__predict_init__()
 
+    def _convert_type(self, data_set, *column_names):
+        for name in column_names:
+            convert_to_category(data_set, name)
+
     def __predict_init__(self):
         data_set = InsuranceCostData(file_name=self._file_name)
         data_set = data_set.read_data()
 
-        convert_to_category(data_set, 'sex')
-        convert_to_category(data_set, 'smoker')
-        convert_to_category(data_set, 'region')
-
+        self._convert_type(data_set)
         dum_data = pd.get_dummies(data_set)
 
         x = dum_data.drop('charges', axis=1)
