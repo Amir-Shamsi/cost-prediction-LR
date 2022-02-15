@@ -10,3 +10,6 @@ convert_to_category(data_set, 'smoker')
 convert_to_category(data_set, 'region')
 
 dum_data = pd.get_dummies(data_set)
+
+x = dum_data.drop('charges', axis=1)
+y = dum_data['charges']
