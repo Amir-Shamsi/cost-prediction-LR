@@ -52,7 +52,7 @@ class InsuranceCostPredictor:
             * _columns
             * _linear_regression
             * _predict_data
-            
+
         :return: None
         """
         data_set = InsuranceCostData(file_name=self._file_name)
@@ -80,6 +80,13 @@ class InsuranceCostPredictor:
         self._columns = dum_data.columns
 
     def predict(self, file_name: str):
+        """
+        the main predict function which get the data line you want
+        to predict cost for.
+
+        :param file_name: file name of new data/ predict data
+        :return: predicted cost of the medical insurance as type list[int]
+        """
         new_data = InsuranceCostData(file_name=file_name)
         new_data = new_data.read_data()
 
