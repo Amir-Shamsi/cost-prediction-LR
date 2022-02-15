@@ -15,6 +15,7 @@ class InsuranceCostPredictor:
     _columns = None
     _linear_regression = None
     _predict_data = None
+    _data_reader = None
 
     def __init__(self, dataset_filename: str = ''):
         """
@@ -52,11 +53,14 @@ class InsuranceCostPredictor:
             * _columns
             * _linear_regression
             * _predict_data
+            * _data_reader
 
         :return: None
         """
         data_set = InsuranceCostData(file_name=self._file_name)
+        self._data_reader = data_set
         data_set = data_set.read_data()
+
 
         self._convert_type(data_set, 'sex', 'smoker', 'region')
 
@@ -114,4 +118,12 @@ class InsuranceCostPredictor:
         function
         """
         return self._predict_data
+
+    def analyze(self, hue, *based_on):
+        """
+        :param hue:
+        :param based_on:
+        :return: None
+        """
+        self._data_reader.analyse(hue, based_on)
 
