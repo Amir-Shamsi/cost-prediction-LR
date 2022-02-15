@@ -12,7 +12,6 @@ class InsuranceCostPredictor:
     _y_test = 0
     _x_test = 0
     _linear_regression = None
-    _predicted = False
 
     def __init__(self, dataset_filename: str = ''):
         if dataset_filename != '':
@@ -44,10 +43,8 @@ class InsuranceCostPredictor:
         self._x_test = x_test
         self._y_test = y_test
 
-        self._predicted = True
-    def get_mean_squared_error(self):
-        if self._predicted:
-            y_predict = self._linear_regression.predict(self._x_test)
-            return math.sqrt(mean_squared_error(self._y_test, y_predict))
 
+    def get_mean_squared_error(self):
+        y_predict = self._linear_regression.predict(self._x_test)
+        return math.sqrt(mean_squared_error(self._y_test, y_predict))
 
