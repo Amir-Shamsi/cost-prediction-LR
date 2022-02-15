@@ -50,6 +50,17 @@ class InsuranceCostPredictor:
         self._columns = dum_data.columns
 
     def predict(self, file_name: str):
+        new_data = InsuranceCostData(file_name=file_name)
+        new_data = new_data.read_data()
+
+        self._convert_type(new_data, 'sex', 'smoker', 'region')
+
+        new_dum_data = pd.get_dummies(new_data)
+
+        data_frame = dummies_data_frame(self._columns, new_dum_data)
+
+        return self._linear_regression.predict(data_frame)
+
     def get_mean_squared_error(self):
         y_predict = self._linear_regression.predict(self._x_test)
         return math.sqrt(mean_squared_error(self._y_test, y_predict))
