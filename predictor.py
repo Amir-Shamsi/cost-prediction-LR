@@ -21,9 +21,9 @@ class InsuranceCostPredictor:
         Initial medical insurance cost predicting class
         for initial the parameter `dataset_filename`'s
         link can be given to it otherwise use default
-        file name 'dataset/insurance.csv'
+        file name 'dataset/insurance.csv'.
 
-        :param dataset_filename: file name of data set to extract and algo train
+        :param dataset_filename: file name of data set to extract and algo train;
         by that
         """
         if dataset_filename != '':
