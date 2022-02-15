@@ -31,6 +31,13 @@ class InsuranceCostPredictor:
         self.__predict_init__()
 
     def _convert_type(self, data_set, *column_names):
+        """
+        Convert type of column to category to train algorithm by them.
+
+        :param data_set: the dataset which contain the column names;
+        :param column_names: column names to change the type;
+        :return: None
+        """
         for name in column_names:
             convert_to_category(data_set, name)
 
