@@ -10,6 +10,8 @@ def dummies_data_frame(columns: Index, av_columns: DataFrame) -> DataFrame:
     """
     _structure = {}
     for column in columns:
+        if column == 'charges':
+            continue
         if column not in av_columns.columns:
             _structure[column] = ['0']
         else:
