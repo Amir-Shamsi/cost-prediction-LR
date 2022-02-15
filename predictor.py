@@ -33,10 +33,13 @@ class InsuranceCostPredictor:
         x_train, x_test, y_train, y_test = train_test_split(x, y, train_size=0.8, random_state=1)
 
         linearR = LinearRegression()
+        self._linear_regression = linearR
 
         linearR.fit(x_train, y_train)
 
         linearR.score(x_test, y_test)
+        self._x_test = x_test
+        self._y_test = y_test
 
         y_predict = linearR.predict(x_test)
 
