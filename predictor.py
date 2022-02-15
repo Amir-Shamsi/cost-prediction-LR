@@ -18,7 +18,7 @@ class InsuranceCostPredictor:
         if dataset_filename != '':
             self._file_name = dataset_filename
 
-    def predict(self):
+    def __predict_init__(self):
         data_set = InsuranceCostData(file_name=self._file_name)
         data_set = data_set.read_data()
 
@@ -39,6 +39,7 @@ class InsuranceCostPredictor:
         linearR.fit(x_train, y_train)
 
         linearR.score(x_test, y_test)
+
         self._x_test = x_test
         self._y_test = y_test
 
