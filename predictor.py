@@ -2,6 +2,7 @@ import pandas as pd
 from dataset.data_reader import InsuranceCostData
 from cat_convertor import convert_to_category
 from sklearn.model_selection import train_test_split
+from sklearn.linear_model import LinearRegression
 
 data_set = InsuranceCostData(file_name='dataset/insurance.csv')
 data_set = data_set.read_data()
@@ -16,3 +17,9 @@ x = dum_data.drop('charges', axis=1)
 y = dum_data['charges']
 
 x_train, x_test, y_train, y_test = train_test_split(x, y, train_size=0.8, random_state=1)
+
+linearR = LinearRegression()
+
+linearR.fit(x_train, y_train)
+
+linearR.score(x_test, y_test)
