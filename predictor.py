@@ -41,6 +41,8 @@ class InsuranceCostPredictor:
         self._x_test = x_test
         self._y_test = y_test
 
-        y_predict = linearR.predict(x_test)
+    def get_mean_squared_error(self):
+        y_predict = self._linear_regression.predict(self._x_test)
+        return math.sqrt(mean_squared_error(self._y_test, y_predict))
 
-        math.sqrt(mean_squared_error(y_test, y_predict))
+
