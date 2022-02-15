@@ -17,6 +17,7 @@ class InsuranceCostPredictor:
     def __init__(self, dataset_filename: str = ''):
         if dataset_filename != '':
             self._file_name = dataset_filename
+        self.__predict_init__()
 
     def __predict_init__(self):
         data_set = InsuranceCostData(file_name=self._file_name)
