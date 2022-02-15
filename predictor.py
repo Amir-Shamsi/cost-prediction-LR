@@ -109,5 +109,9 @@ class InsuranceCostPredictor:
         return math.sqrt(mean_squared_error(self._y_test, y_predict))
 
     def get_predict_data(self):
+        """
+        :return: return the predicted data line you given to `predict()`
+        function
+        """
         return self._predict_data
 
