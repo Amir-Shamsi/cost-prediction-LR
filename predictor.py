@@ -9,6 +9,9 @@ from sklearn.linear_model import LinearRegression
 
 class InsuranceCostPredictor:
     _file_name = 'dataset/insurance.csv'
+    _y_test = 0
+    _x_test = 0
+    _linear_regression = None
 
     def __init__(self, dataset_filename: str = ''):
         self._file_name = dataset_filename
