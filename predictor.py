@@ -26,7 +26,8 @@ class InsuranceCostPredictor:
         data_set = InsuranceCostData(file_name=self._file_name)
         data_set = data_set.read_data()
 
-        self._convert_type(data_set)
+        self._convert_type(data_set, 'sex', 'smoker', 'region')
+
         dum_data = pd.get_dummies(data_set)
 
         x = dum_data.drop('charges', axis=1)
