@@ -1,8 +1,8 @@
 # Insurance Cost Prediction with Linear Regression
 
 [![BSD Licence](https://img.shields.io/badge/licence-MIT-geen?style=flat-square)](LICENSE)
-<a href="https://github.com/Amir-Shamsi/SpAlgo" title="Repo Size">
-<img src="https://img.shields.io/github/repo-size/Amir-Shamsi/SpAlgo?label=Repo%20Size&logo=Github&style=flat-square" alt="Project Initiator Repo Size"/>
+<a href="https://github.com/Amir-Shamsi/cost-prediction-LR" title="Repo Size">
+<img src="https://img.shields.io/github/repo-size/Amir-Shamsi/cost-prediction-LR?label=Repo%20Size&logo=Github&style=flat-square" alt="Project Initiator Repo Size"/>
 </a>
 [![made-with-Markdown](https://img.shields.io/badge/Made%20with-Python-purple.svg?style=flat-square)](http://python.org)
 [![GitHub followers](https://img.shields.io/github/followers/Amir-Shamsi.svg?style=social&label=Follow&maxAge=2592000)](https://github.com/Amir-Shamsi/)
