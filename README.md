@@ -46,16 +46,18 @@ see the [example](src/example/insurance_cost.py) file to undrestand exactly how 
 ## Libraries
 to implement this project this libraries have been used:
  - pandas
- - linear regression
+ - matplotlib
  - sklearn
  - seaborn
 
 ## Installation
 1. clone project using this code in you shell:
+
     ```sh
     git clone https://github.com/Amir-Shamsi/insurance-cost-prediction-LR/.git
     ```
 2. install requirements
+
     ```sh
     pip install -r requirements.txt
     ```
