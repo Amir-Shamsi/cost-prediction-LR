@@ -32,7 +32,7 @@ you can see the data set [here](dataset/insurance.csv):
 </div>
 
 
-## Data virtualization
+## Data visualization
 you can analyze data using the following code:
 ```python
 from predictor import InsuranceCostPredictor
