@@ -4,9 +4,8 @@
 <a href="https://github.com/Amir-Shamsi/SpAlgo" title="Repo Size">
 <img src="https://img.shields.io/github/repo-size/Amir-Shamsi/SpAlgo?label=Repo%20Size&logo=Github&style=flat-square" alt="Project Initiator Repo Size"/>
 </a>
-[![Downloads](https://static.pepy.tech/personalized-badge/spalgo?period=total&units=international_system&left_color=grey&right_color=MediumVioletRed&style=flat-square&left_text=Downloads)](https://pepy.tech/project/spalgo)
-[![PyPI version shields.io](https://img.shields.io/pypi/v/SpAlgo.svg?style=flat-square)](https://pypi.python.org/pypi/SpAlgo/)
-![GitHub Workflow Status](https://img.shields.io/github/workflow/status/amir-shamsi/spalgo/CodeQL?style=flat-square)
+[![made-with-Markdown](https://img.shields.io/badge/Made%20with-Python-purple.svg?style=flat-square)](http://python.org)
+[![GitHub followers](https://img.shields.io/github/followers/Amir-Shamsi.svg?style=social&label=Follow&maxAge=2592000)](https://github.com/Amir-Shamsi/)
 
 Implemetation of cost prediction for medical insurance using linear regression with python.
 
@@ -64,4 +63,4 @@ to implement this project this libraries have been used:
     ```sh
     pip install -r requirements.txt
     ```
-3. Done
+3. Done 👾
