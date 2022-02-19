@@ -35,6 +35,9 @@ you can see the data set [here](dataset/insurance.csv):
 ## Data analyze
 you can analyze data using the following code:
 ```python
+from predictor import InsuranceCostPredictor
+
+icp = InsuranceCostPredictor('../../dataset/insurance.csv')
 icp.analyze(hue='smoker', based_on=['age', 'bmi', 'smoker', 'charges'])
 ```
 see the [example](src/example/insurance_cost.py) file to undrestand exactly how to use it.
