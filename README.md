@@ -15,7 +15,7 @@ you can see the data set [here](dataset/insurance.csv):
 
 <div align="center">
 
-| &nbsp; &nbsp; &nbsp; age &nbsp; &nbsp; &nbsp; |  &nbsp; &nbsp; &nbsp; sex &nbsp; &nbsp; &nbsp; 	| &nbsp; &nbsp; &nbsp; bmi &nbsp; &nbsp; &nbsp;  | &nbsp; &nbsp; &nbsp; children &nbsp; &nbsp; &nbsp;  | &nbsp; &nbsp; &nbsp; smoker &nbsp; &nbsp; &nbsp;  |  &nbsp; &nbsp; &nbsp; region &nbsp; &nbsp; &nbsp;  |  &nbsp; &nbsp; &nbsp; charges &nbsp; &nbsp; &nbsp;  |
+| &nbsp; age &nbsp; |  &nbsp; &nbsp; &nbsp; sex &nbsp; &nbsp; &nbsp; 	| &nbsp; &nbsp; &nbsp; bmi &nbsp; &nbsp; &nbsp;  | &nbsp; &nbsp; &nbsp; children &nbsp; &nbsp; &nbsp;  | &nbsp; &nbsp; &nbsp; smoker &nbsp; &nbsp; &nbsp;  |  &nbsp; &nbsp; &nbsp; region &nbsp; &nbsp; &nbsp;  |  &nbsp; &nbsp; &nbsp; charges &nbsp; &nbsp; &nbsp;  |
 | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
 19 | female | 27.9 | 0 | yes | southwest | 16884.924
 18 | male | 33.77 | 1 | no | southeast | 1725.5523
